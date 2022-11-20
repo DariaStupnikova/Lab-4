@@ -1,6 +1,5 @@
 from tkinter import *
 import random
-from pygame import mixer
 from threading import Thread
 from playsound import playsound
 
