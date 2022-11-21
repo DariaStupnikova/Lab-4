@@ -7,7 +7,7 @@ def music():playsound('D:\\Download\\01-Alice- Madness Returns Theme.mp3')#фу�
 
 Thread(target = music, daemon=True).start()#запускается функция в отдельном потоке
 
-'''from tkinter import messagebox
+from tkinter import messagebox
 top = Tk()
 
 C = Canvas(top, bg="blue", height=250, width=300)
@@ -16,7 +16,7 @@ background_label = Label(top, image=filename)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
 C.pack()
-top.mainloop'''
+top.mainloop
 def gen():
     s = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     X = random.choice(s)
