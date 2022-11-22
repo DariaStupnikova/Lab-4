@@ -3,7 +3,8 @@ import random
 from threading import Thread
 from playsound import playsound
 
-def music():playsound('D:\\Download\\01-Alice- Madness Returns Theme.mp3')#функция которая будет играть музыка
+def music():
+    playsound('D:\\Download\\01-Alice- Madness Returns Theme.mp3')#функция которая будет играть музыка
 
 Thread(target = music, daemon=True).start()#запускается функция в отдельном потоке
 
@@ -38,7 +39,6 @@ lbl.grid(column=0, row=0)
 txt = Entry(window,width=10)
 txt.grid(column=1, row=0)
 txt.focus()
-a = txt.get()
 btn = Button(window, text="Сгенерировать ключ", command=clicked)
 btn.grid(column=0, row=2)
 window.mainloop()
